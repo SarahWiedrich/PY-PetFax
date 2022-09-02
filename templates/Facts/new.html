@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFax Submit Fun Facts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stule.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="submission"><h2>Name</h2></label>
+            <input name="submission" type="text">
+            <br/>
+            <label for="facts"><h2>Fun Fact</h2></label>
+            <textarea name="facts"></textarea>
+            <br/>
+            <input type="submit" value="Submit">
+        </form>
+        <div>
+            <a href="/pets">Back</a>
+        </div>
+    </div>
+</body>
+</html>
